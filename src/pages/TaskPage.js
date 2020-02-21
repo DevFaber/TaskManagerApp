@@ -25,6 +25,21 @@ export default class TaskPage extends Component {
           <Text>Tarefa #01</Text>
           <Text>Tarefa #02</Text>
           <Text>Tarefa #03</Text>
+          <Text>Tarefa #03</Text>
+          <Text>Tarefa #03</Text>
+          <Text>Tarefa #03</Text>
+          <Text>Tarefa #03</Text>
+          <Text>Tarefa #03</Text>
+          <Text>Tarefa #03</Text>
+          <Text>Tarefa #03</Text>
+          <Text>Tarefa #03</Text>
+          <Text>Tarefa #03</Text>
+          <Text>Tarefa #03</Text>
+          <Text>Tarefa #03</Text>
+          <Text>Tarefa #03</Text>
+          <Text>Tarefa #03</Text>
+          <Text>Tarefa #03</Text>
+          <Text>Tarefa #03</Text>
         </View>
       </View>
     )
