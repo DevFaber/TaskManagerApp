@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import {
+  Alert,
   View,
   Text,
   StyleSheet,
@@ -70,6 +71,22 @@ export default class TaskPage extends Component {
     this.setState({tasks}, this.filterTasks())
   }
 
+  addTask = newTask => {
+    if (!newTask.desc || !newTask.desc.trim()) {
+      Alert.alert('Dados Inválidos', 'Descrição não Informada!')
+      return
+    }
+    const tasks = [...this.state.tasks]
+    tasks.push({
+      id: Math.random(),
+      desc: newTask.desc,
+      estimateAt: newTask.date,
+      doneAt: null,
+    })
+
+    this.setState({tasks, showDone: false}, this.filterTasks)
+  }
+
   render() {
     const today = moment()
       .locale('pt-br')
@@ -82,6 +99,7 @@ export default class TaskPage extends Component {
         <AddTask
           isVisible={this.state.handleAddTask}
           onCancel={() => this.setState({handleAddTask: false})}
+          onSave={this.addTask}
         />
         <ImageBackground source={imgHoje} style={styles.background}>
           <View style={styles.iconBar}>
