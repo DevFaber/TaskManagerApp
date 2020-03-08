@@ -15,7 +15,11 @@ import moment from 'moment'
 import globalStyles from '../GlobalStyles'
 import Icon from 'react-native-vector-icons/FontAwesome'
 
-const initialState = {desc: '', date: new Date(), showDatePicker: false}
+const initialState = {
+  desc: '',
+  date: new Date(),
+  showDatePicker: false,
+}
 
 export default class AddTask extends Component {
   state = {
@@ -122,6 +126,7 @@ const styles = StyleSheet.create({
     borderRadius: 4,
     borderColor: '#E3E3E3',
     borderWidth: 1,
+    fontWeight: 'bold',
   },
 
   buttons: {
