@@ -1,5 +1,5 @@
 import {AppRegistry} from 'react-native'
-import TaskPage from './src/pages/TaskPage'
+import Navigator from './src/routes'
 import {name as appName} from './app.json'
 
-AppRegistry.registerComponent(appName, () => TaskPage)
+AppRegistry.registerComponent(appName, () => Navigator)
